@@ -1,0 +1,89 @@
+.rest-img {
+  max-width: 100%;
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: -25px;
+  margin-bottom: -25px;
+}
+
+.menu {
+  border-radius: 2.5rem 2.5rem 0 0;
+  position: relative;
+  margin-top: -20px;
+  padding-top: 10px;
+  background-color: $lightgrey;
+  width: 100%;
+}
+
+.menu-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 10%;
+  align-items: center;
+  font-size: large;
+
+  h2 {
+    font-weight: normal;
+  }
+  i {
+    font-size: x-large;
+    color: grey;
+  }
+}
+
+.entries,
+.meal,
+.desserts {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    border-bottom: 3px solid $colour-third;
+    width: 12%;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: large;
+    padding-bottom: 2px;
+  }
+}
+
+.food-card {
+  background-color: white;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  &__description {
+    overflow: hidden;
+    flex: 1;
+    line-height: 25px;
+  }
+  & h3 {
+    @include card-organisation;
+    font-size: 1.15rem;
+  }
+  & p {
+    @include card-organisation;
+  }
+  &__price {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 16px;
+  }
+}
+
+.command {
+  text-align: center;
+  padding: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

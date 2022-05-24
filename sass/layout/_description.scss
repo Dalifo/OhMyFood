@@ -1,0 +1,28 @@
+.location {
+    color: darken($color: grey, $amount: 25);
+    text-align: center;
+    font-size: large;
+    background-color: $darkgrey;
+    margin-top: -20px;
+    padding: 15px;
+    font-weight: bold;
+    i {
+        padding-right: 15px;
+    }
+}
+
+.description {
+    text-align: center;
+    background-color: $lightgrey;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 1.8em;
+        margin: 0;
+    }
+    h3 {
+        font-weight: normal;
+    }
+}
