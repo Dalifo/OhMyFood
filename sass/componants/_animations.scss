@@ -1,0 +1,27 @@
+.fa-heart {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    font-size: x-large;
+    color: grey;
+
+    &:hover {
+      animation: fill 1s ease-in-out;
+      background:linear-gradient($colour-primary, $colour-secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color:transparent;
+      font-weight: bold;
+    }
+  }
+
+@keyframes fill {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}

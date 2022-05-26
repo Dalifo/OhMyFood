@@ -28,10 +28,6 @@
   h2 {
     font-weight: normal;
   }
-  i {
-    font-size: x-large;
-    color: grey;
-  }
 }
 
 .entries,
@@ -59,6 +55,7 @@
   margin: 0.5rem 0;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  overflow: hidden;
   &__description {
     overflow: hidden;
     flex: 1;
@@ -78,7 +75,42 @@
     align-items: flex-end;
     padding-left: 16px;
   }
+  &__choice {
+    background-color: $colour-third;
+    margin: -10px -85px -16px 16px;
+    height: 70px;
+    width: 64px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  &:hover &__choice {
+    margin-right: -20px;
+    transition-duration: 1s;
+  }
+
+  &__choice-icon{
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: 1.5s;
+  }
+  &:hover &__choice-icon{
+    transform: rotate(0);
+  }
+
+  & .fa-check{
+    color: $colour-third;
+  }
 }
+
+
+
 
 .command {
   text-align: center;
