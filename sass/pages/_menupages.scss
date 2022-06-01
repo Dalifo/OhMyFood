@@ -56,6 +56,9 @@
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   overflow: hidden;
+  animation: menuappear .8s cubic-bezier(.5,1.5,.35,.80) both;
+  
+  transform: scale(0);
   &__description {
     overflow: hidden;
     flex: 1;
