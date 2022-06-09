@@ -6,8 +6,8 @@
     border-radius: 25px;
     border: none;
     font-size: medium;
-    max-width: 65%;
-    min-width: 50%;
+    max-width: 220px;
+    min-width: 170px;
     color: white;
     cursor: pointer;
     text-align: center;
@@ -27,6 +27,15 @@
     font-weight: bold;
     font-size: large;
     @include btn-shadow;
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        width: 300px;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        width: 25%;
+        flex-direction: row;
+    }
     
     .fa-mobile-screen-button, .fa-list, .fa-store {
         padding: 12px;
