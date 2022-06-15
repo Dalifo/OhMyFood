@@ -26,6 +26,10 @@
     height: 40px;
     font-weight: bold;
     font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
     @include btn-shadow;
 
     @media screen and (min-width: map-get($breakpoints, tablet)) {
@@ -52,11 +56,12 @@
         color: white;
         position: absolute;
         left: -4%;
-        top: 35%;
+        top: 31%;
         width: 10px;
         height: 10px;
         text-align: center;
         font-size: small;
+       
     }
     &:hover {
         background-color: lighten($color: $colour-primary, $amount: 35);

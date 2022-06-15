@@ -3,8 +3,9 @@ header {
     font-size: large;
     @include btn-shadow;
     & h1 {
-        padding-bottom: 500px;
+        margin-top: 10px;
         font-weight: normal;
+        padding-bottom: 5px;
     }
     & i {
         font-size: 1.3rem;
