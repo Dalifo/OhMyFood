@@ -1,0 +1,13 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 de la formation de développeur web de OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed",
+    "prefix": "postcss .public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "Dalifo",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

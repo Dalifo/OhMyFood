@@ -1,0 +1,73 @@
+.btn-primary {
+    background: linear-gradient($colour-secondary, $colour-primary);
+    @include btn-shadow;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: medium;
+    max-width: 220px;
+    min-width: 170px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    &:hover {
+        box-shadow: 0px 5px 8px darken($color: $lightgrey, $amount: 25);
+    }
+}
+
+.btn-choose {
+    padding: 20px;
+    margin: 15px;
+    background-color: $lightgrey;
+    border-radius: 25px;
+    position: relative;
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+    @include btn-shadow;
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        width: 300px;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        width: 25%;
+        flex-direction: row;
+    }
+    
+    .fa-mobile-screen-button, .fa-list, .fa-store {
+        padding: 12px;
+        padding-right: 30px;
+        padding-left: 20px;
+        color: grey;
+        font-size: 1.3rem;
+        width: 15px;
+    }
+    .fa-1, .fa-2, .fa-3 {
+        background-color: $colour-primary;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        position: absolute;
+        left: -4%;
+        top: 35%;
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        font-size: small;
+    }
+    &:hover {
+        background-color: lighten($color: $colour-primary, $amount: 35);
+    }
+    &:hover .fa-mobile-screen-button {
+        color: $colour-primary;
+    }
+    &:hover .fa-list {
+        color: $colour-primary;
+    }
+    &:hover .fa-store {
+        color: $colour-primary;
+    }
+}

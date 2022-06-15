@@ -1,0 +1,91 @@
+.restaurants {
+  background-color: $lightgrey;
+  padding-top: 30px;
+  padding-left: 5%;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 5%;
+
+    & > h2 {
+      width: 100%;
+    }    
+  }
+}
+
+
+.restaurant-card {
+    background-color: white;
+    border-radius: 16px;
+    position: relative;
+    color: inherit;
+    display: flex;
+    width: 95%;
+    height: 260px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 20px -10px grey;
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      width: 22%;
+    }
+
+    & > a {
+      width: 100%;
+    }
+
+    &__image {
+        height: 180px;
+        width: 100%;
+        border: transparent solid 0px;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: none;
+        overflow: hidden;
+        & img {
+          border-radius: 1rem 1rem 0 0;
+          width: 100%;
+          object-fit: cover;
+
+          @media screen and (min-width: map-get($breakpoints, desktop)) {
+            height: 180px;
+          }
+        }
+
+       
+      }
+      &__new {
+        background-color: $colour_third;
+        color: (darken($color: $colour_third, $amount: 38));
+        font-weight: bold;
+        font-size: large;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 8px 16px 8px 16px;
+      }
+      &__body {
+        padding: 5px 16px 16px 14px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        line-height: 8px;
+      } 
+      &__title {
+        font-size: 1.1rem;
+        line-height: 5px;
+      }
+      &__like {
+        font-size: xx-large;
+        padding-top: 15px;
+        color: grey;
+      }  
+}

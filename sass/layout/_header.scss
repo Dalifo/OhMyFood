@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+    font-size: large;
+    @include btn-shadow;
+    & h1 {
+        margin-top: 10px;
+        font-weight: normal;
+    }
+    & i {
+        font-size: 1.3rem;
+        position: absolute;
+        left: 5%;
+        top: 20px;
+    }
+}
